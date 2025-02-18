@@ -5,10 +5,10 @@ This repository is maintained to provide relevant codes corresponding to the cha
 ## Chapters and Associated Code
 
 - **Chapter 2: A Novel Geometric AR(1) Model**
-- **Chapter 3: Coherent Forecasting of NoGeAR(1)**
-- **Chapter 4: NoGe-INGARCH**
-- **Chapter 5: Softplus Negative Binomial INGARCH**
-- **Chapter 6: Neural Negative Binomial INGARCH**
+- **Chapter 3: Coherent Forecasting of NoGeAR(1) Model**
+- **Chapter 4: NoGe-INGARCH Model**
+- **Chapter 5: Softplus Negative Binomial INGARCH Model**
+- **Chapter 6: Neural Negative Binomial INGARCH Model**
 
 ## Implementation Details
 
