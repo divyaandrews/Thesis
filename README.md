@@ -2,7 +2,7 @@
 
 This repository is maintained to provide relevant codes corresponding to the chapters of my PhD thesis titled **"Some Contributions to Modelling and Analysis of Count Time Series"**.
 
-## Chapters
+## Chapters (with Chapter No.s same as those in the thesis)
 
 - **Chapter 2: A Novel Geometric AR(1) Model**
 - **Chapter 3: Coherent Forecasting of NoGeAR(1) Model**
