@@ -21,7 +21,7 @@ This folder contains the following scripts and files:
 
 
 ### **5. Supporting Files**
-- `downloads.txt`: Contains the  dataset used for real data analysis.
+- `Downloads.txt`: Contains the  dataset used for real data analysis.
 - `README.md`: This file, providing an overview of the available codes.
 
 For details on how to run the scripts, please refer to the comments within each file or reach out for further assistance.
