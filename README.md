@@ -1,4 +1,4 @@
-# Thesis Code Repository
+# Thesis Code Repository<img src="logo_CUSAT.png" align="right" height="139" />
 
 This repository is maintained to provide relevant codes corresponding to the chapters of my PhD thesis titled **"Some Contributions to Modelling and Analysis of Count Time Series".**.
 
