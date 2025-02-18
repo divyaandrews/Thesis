@@ -17,7 +17,7 @@ This folder contains the following scripts and files:
 - `NoGeAR1_simulation_study.R`: Conducts extensive simulation studies comparing estimator performance.
 
 ### **3. Real Data Analysis**
-- `NoGeAR1_real_data_analysis.R`: Applies the Geometric AR(1) model to the number of downloads of a TeX editor.
+- `NoGeAR1_real_data_analysis.R`: Applies the NoGeAR(1) model to the number of downloads of a TeX editor.
 
 
 ### **5. Supporting Files**
