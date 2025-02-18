@@ -34,4 +34,9 @@ Temporary Items
 # iCloud generated files
 *.icloud
 
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
 # End of https://www.toptal.com/developers/gitignore/api/macos
