@@ -1,6 +1,6 @@
 # Thesis Code Repository
 
-This repository is maintained to provide relevant codes corresponding to the chapters of my PhD thesis titled **"[Insert Thesis Title Here]"**.
+This repository is maintained to provide relevant codes corresponding to the chapters of my PhD thesis titled **"Some Contributions to Modelling and Analysis of Count Time Series".**.
 
 ## Chapters and Associated Code
 
