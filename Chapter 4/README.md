@@ -10,15 +10,15 @@ This folder contains the following scripts and files:
 
 
 ### **1. Simulation Studies**
-- `NoGeAR1_estimation.R`: Implements parameter estimation using Two-Stage Conditional Least Squares.
-- `NoGeAR1_saddlepoint.R`: Computes parameter estimates using the Saddlepoint Approximation method.
-- `NoGeAR1_simulation_study.R`: Conducts extensive simulation studies comparing estimator performance.
+- `Simulation_CMLE.R`: Implements parameter estimation using Conditional Maximum Likelihood approach.
+- `MATLAB_bayesian`: Consists of MATLAB files that aid in computing parameter estimates using the Bayesian method.
 
 ### **2. Hepatitis Data Analysis**
 - `NoGeAR1_data_analysis.R`: Applies the NoGeAR(1) model to the number of downloads of a TeX editor.
-
+- `NoGeAR1_data_analysis.R`: Applies the NoGeAR(1) model to the number of downloads of a TeX editor.
+- `Downloads.txt`: Contains the  dataset used for real data analysis.
 
 ### **3. Transactions Data Analysis**
+- `NoGeAR1_data_analysis.R`: Applies the NoGeAR(1) model to the number of downloads of a TeX editor.
+- `NoGeAR1_data_analysis.R`: Applies the NoGeAR(1) model to the number of downloads of a TeX editor.
 - `Downloads.txt`: Contains the  dataset used for real data analysis.
-- `README.md`: This file, providing an overview of the available codes.
-
