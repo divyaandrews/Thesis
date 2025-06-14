@@ -1,1 +1,41 @@
+clear all
+global x n
+%sample_sizes = [50 100 500];
+%result = cell(length(sample_sizes),1);
+theta=[1;0.4;0.2;0.35];
+%for i = 1:length(sample_sizes)
+%n=sample_sizes(i);
+n=501;
+s=1050;
+mystream=RandStream('mt19937ar','Seed',1512);
+RandStream.setGlobalStream(mystream);
+k=0;
+tic;
+for time=1:s
+    lam=zeros(1,n);
+    lam(1)=theta(1);
+    x(1)=nogernd(theta(4),lam(1));
+    for t=2:n
+        lam(t)=theta(1)+theta(2)*x(t-1)+theta(3)*lam(t-1);
+        x(t)=nogernd(theta(4),lam(t));
+    end
+    startval=theta+(2*rand(4,1)-1)/20;
+    A=[0,1,1,0];b=1;
 
+    lb=[0.001;0.001;0.001;0.001];ub=[50;1;1;1];
+    opt=optimset('Algorithm','sqp','Display','off','MaxIter',1000);  %% 'interior-point', 'active-set'
+    mle(:,time)=fmincon(@nogelik,startval,A,b,[],[],lb,ub,[],opt);
+    nanLogicalArray = isnan(mle);
+    numNaNs = sum(nanLogicalArray, 'all');
+   % mele(:,time)=fmincon(@el,startval,A,b,[],[],lb,ub,[],opt);
+    bias1(:,time)=mle(:,time)-theta;
+     %nanLogicalArray1 = isnan(bias1);
+    %numNaNs1 = sum(nanLogicalArray1, 'all');
+   %bias2(:,time)=mele(:,time)-theta;
+    k=k+1;
+end
+%[sum(mle,2),sum(bias1.^2,2),sum(abs(bias1),2);sum(mele,2),sum(bias2.^2,2),sum(abs(bias2),2)]/s;
+[sum(mle,2,"omitnan"),sum(bias1.^2,2,"omitnan"),sum(abs(bias1),2,"omitnan")]/(s-numNaNs)
+%[sum(mle,2,"omitnan"),sum(bias1.^2,2,"omitnan"),sum(abs(bias1),2,"omitnan")]/(s-numNaNs);
+%end
+toc
