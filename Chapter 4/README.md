@@ -11,14 +11,16 @@ This folder contains the following scripts and files:
 
 ### **1. Simulation Studies**
 - `Simulation_CMLE.R`: Implements parameter estimation using Conditional Maximum Likelihood approach.
-- `MATLAB_bayesian`: Consists of MATLAB files that aid in computing parameter estimates using the Bayesian method.
+- `MATLAB_Bayesian`: Consists of MATLAB files that aid in computing parameter estimates using the Bayesian method.
 
 ### **2. Hepatitis Data Analysis**
-- `NoGeAR1_data_analysis.R`: Applies the NoGeAR(1) model to the number of downloads of a TeX editor.
-- `NoGeAR1_data_analysis.R`: Applies the NoGeAR(1) model to the number of downloads of a TeX editor.
-- `Downloads.txt`: Contains the  dataset used for real data analysis.
+- `hep_cml.R`: Applies the NoGe-INGARCH model to the weekly counts of Hepatitis - B cases and estimates CMLEs.
+- `hep_hmc.R`: Applies the NoGe-INGARCH model to the Hepatitis data and Bayesian estimates using HMC algorithm.
+- `hep_noge.stan`: Stan file required for implementation of HMC algorithm.
+- `hepb.csv`: Contains the  dataset used for real data analysis.
 
 ### **3. Transactions Data Analysis**
-- `NoGeAR1_data_analysis.R`: Applies the NoGeAR(1) model to the number of downloads of a TeX editor.
-- `NoGeAR1_data_analysis.R`: Applies the NoGeAR(1) model to the number of downloads of a TeX editor.
-- `Downloads.txt`: Contains the  dataset used for real data analysis.
+- `trans_cmle.R`: Applies the NoGe-INGARCH model to the Transactions counts and estimates CMLEs.
+- `trans_hmc.R`: Applies the NoGe-INGARCH model to the Transactions counts and Bayesian estimates using HMC algorithm.
+- `trans_noge.stan`: Stan file required for implementation of HMC algorithm.
+- `EricssonB_Jul2.txt`: Contains the  dataset used for real data analysis.
